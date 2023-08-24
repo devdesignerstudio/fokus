@@ -68,7 +68,7 @@ function mudaTema(contexto){
 }
 
 function mudaBanner(contexto){
-    banner.setAttribute('src',`/imagens/${contexto}.png`)
+    banner.setAttribute('src',`./imagens/${contexto}.png`)
 }
 
 function mudaTitulo(contexto){
@@ -114,13 +114,13 @@ function iniciarOuPausarTemporizador(){
     audioIniciar.play()
     intervaloId = setInterval(contagemRegressiva, 1000)
     spanComecarPausar.textContent = "Pausar"
-    iconeComecarPausar.setAttribute('src','/imagens/pause.png')
+    iconeComecarPausar.setAttribute('src','./imagens/pause.png')
 }
 
 function zerarTemporizador(){
     clearInterval(intervaloId)
     spanComecarPausar.textContent = "Começar"
-    iconeComecarPausar.setAttribute('src','/imagens/play_arrow.png')
+    iconeComecarPausar.setAttribute('src','./imagens/play_arrow.png')
     intervaloId = null
 }
 
